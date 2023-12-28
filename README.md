@@ -64,7 +64,7 @@ const io = require("socket.io")(3000, {
 
 For example, my frontend is deployed at the following url:
 
-```
+```env
 FRONTEND_URL= "https://client-seven-taupe.vercel.app"
 ```
 
