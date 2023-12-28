@@ -1,4 +1,8 @@
 {
-  "functions": "api/*.js",
-  "rewrites": [{ "source": "/(.*)", "destination": "/$1" }]
+  "functions": {
+    "api": {
+      "source": "/path/to/functions",
+      "output": "/output-directory/functions"
+    }
+  }
 }
