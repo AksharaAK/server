@@ -1,16 +1,12 @@
 const axios = require("axios");
-const http = require("http");
 require("dotenv").config();
 const { format } = require("date-fns");
-const { Server } = require("socket.io");
-const httpServer = http.createServer();
 
-const io = new Server(httpServer, {
+const io = require("socket.io")(3000, {
   cors: {
-    origin: "https://client-seven-taupe.vercel.app",
+    origin: "https://client-seven-taupe.vercel.app/",
     methods: ["GET", "POST"],
   },
-  transports: ["websocket"],
 });
 
 const auth = {
@@ -56,10 +52,4 @@ io.on("connection", (socket) => {
       console.error("Error calling ChatNBX API:", error);
     }
   });
-});
-
-const PORT = process.env.PORT || 3000;
-
-httpServer.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
 });
