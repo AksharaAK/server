@@ -62,6 +62,12 @@ const io = require("socket.io")(3000, {
 });
 ```
 
+For example, my frontend is deployed at the following url:
+
+```
+FRONTEND_URL= "https://client-seven-taupe.vercel.app"
+```
+
 ## API Endpoints
 
 POST /api/chat/completions/: Endpoint for obtaining chat completions.
