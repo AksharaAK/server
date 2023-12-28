@@ -13,7 +13,7 @@ Welcome to the ChatNBX Server project! This server handles real-time communicati
 
    ```bash
    git clone <repository-url>
-   cd Server
+   cd server
    ```
 
 2. Install dependencies:
