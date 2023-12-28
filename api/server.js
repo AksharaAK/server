@@ -1,4 +1,5 @@
 const axios = require("axios");
+const cors = require("cors");
 require("dotenv").config();
 const { format } = require("date-fns");
 
@@ -7,7 +8,9 @@ const io = require("socket.io")(3000, {
     origin: "https://client-seven-taupe.vercel.app",
     methods: ["GET", "POST"],
   },
+  transports: ["websocket"],
 });
+
 const auth = {
   headers: {
     "Content-Type": "application/json",
