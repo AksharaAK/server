@@ -5,7 +5,7 @@ const { format } = require("date-fns");
 
 const io = require("socket.io")(3000, {
   cors: {
-    origin: "https://client-seven-taupe.vercel.app",
+    origin: "https://client-seven-taupe.vercel.app/",
     methods: ["GET", "POST"],
   },
 });
