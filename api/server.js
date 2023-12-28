@@ -10,6 +10,7 @@ const io = new Server(httpServer, {
     origin: "https://client-seven-taupe.vercel.app",
     methods: ["GET", "POST"],
   },
+  transports: ["websocket"],
 });
 
 const auth = {
