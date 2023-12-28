@@ -8,7 +8,6 @@ const io = require("socket.io")(3000, {
     origin: "https://client-seven-taupe.vercel.app",
     methods: ["GET", "POST"],
   },
-  transports: ["websocket"],
 });
 
 const auth = {
