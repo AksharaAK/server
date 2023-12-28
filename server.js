@@ -4,7 +4,7 @@ const { format } = require("date-fns");
 
 const io = require("socket.io")(3000, {
   cors: {
-    origin: "http://localhost:3001",
+    origin: "https://client-seven-taupe.vercel.app/",
     methods: ["GET", "POST"],
   },
 });
