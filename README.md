@@ -86,3 +86,4 @@ const auth = {
 ## Deployment
 
 Deploy the server to your preferred platform. Ensure the environment variables are configured appropriately.
+Currently this server runs locally and the frontend code reflects this as well. 
