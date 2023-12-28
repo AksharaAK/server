@@ -14,6 +14,8 @@ const io = new Server(httpServer, {
   transports: ["websocket"],
 });
 
+httpServer.listen(3000);
+
 const auth = {
   headers: {
     "Content-Type": "application/json",
